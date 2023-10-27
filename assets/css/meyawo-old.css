@@ -15,8 +15,8 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
 :root {
   --blue: #1e549f;
-  --indigo: #000;
-  --purple: #1e2024;
+  --indigo: #695aa6;
+  --purple: #6f42c1;
   --pink: #e83e8c;
   --red: #ec185d;
   --orange: #ff6d02;
@@ -27,7 +27,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #393e46;
-  --primary: #ec185d;
+  --primary: #695aa6;
   --secondary: #393e46;
   --success: #1bb74f;
   --info: #17a2b8;
@@ -40,10 +40,8 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif:
-  "Open Sans", sans-serif;
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-  "Liberation Mono", "Courier New", monospace;
+  --font-family-sans-serif: "Open Sans", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 *,
@@ -11077,7 +11075,7 @@ a.text-dark:hover, a.text-dark:focus {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   font-family: 'Baloo Paaji', cursive;
-  color: #000;
+  color: #695aa6;
 }
 
 .my-font {
@@ -11713,7 +11711,7 @@ pre .code {
 }
 
 .custom-navbar.affix .logo {
-  color: #000;
+  color: #695aa6;
 }
 
 .custom-navbar.affix .container {
@@ -12098,7 +12096,7 @@ pre .code {
 }
 
 .header .header-content .header-title .down {
-  font-size: calc(28px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
+  font-size: calc(30px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
   margin-bottom: 0;
   position: relative;
   display: block;
