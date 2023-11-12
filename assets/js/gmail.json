@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "dazzling-lodge-280803",
+  "private_key_id": "8a30b906727678171a127e94fe8614f35e8e202a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCkYDxP1erbpwZ5\nEiZYU5jfWOnMpTzcvWinp2Lo6bvSQiXXiplHAfJiMm/kfo1BV9/foJhN3GjMwNwm\nuln85G8Ufc+1dqEPF85OvbzcgzQWqEkr8PP5u3WvT3oZUVrR2iduFDN79uCncrwJ\nAsAWeKDFxyY2sYYdpmEalcDOPnnnok/fT73VFerQg3T6l08Y9JJjABPXH0r4YrJP\n7avN/kjfsODiYMv050ukJfDLWLi631pQdGd9Rkd47YPDbPuTW4mk97eYxWLka5U6\nUHj9dtnBat3x9D6+IoSPckm43KzWQU1VC+ivzmJ77G0HR7p1OKZ3I97CU+R9Pxv5\nNDUNKEXXAgMBAAECggEAGc7Tnq6ghEIyKE+AM71UXY+Gjc9NF1SpxNY+wlZIW1fF\nZz+8lxh9fODHDqIL/ZFqy0qvVFzhxhwVtK2XiWGNoIhW/0++iTHHU4zuGn/YbXeY\nnXc5vHZWoOLNRy0DIbsAa9kXcu7Xu5KuZopxrFWI2zn3DFP3vFoDbvrKMyzoqO8O\nPWFCeFYDHusSxqy/doGjmCDBmQ6w4V0LXF7piB+Kbvwdt338tEvnvrSju3QYOu6Z\nRkNmMCq/0SRCQyRh0oawCXstHvZ1u7/+WlF78dr1wlcPx6xXl/4XHyBuUBdbAObt\nyczasBj9lwqyKmcXWgX6/kkpRIeQCOEzIkiISiNPmQKBgQDVMfEw7zqsT2nGAJlJ\nnsTNYi0X1V1kM8WVTQoH2xCwI4alt6c9FX7yuoW6J+zd+EPbQOMQLjd1ZiKz1tVy\neF8UnPx4TI6veB8XjJsfISqm0pHb42Um53noxIkzH8z8ulY0dKQdG6VU5kvXJOe5\nXQQpPUJXSxonO54FXWgT1ymiqwKBgQDFYQbyGbfDXrQ3dEcYyz2ssZEFAFDG1HSX\nfXzdyMF/ISDRTGs3bE8YAPpbX+DUE0U8DDE4kZp121N23OCGLAQMRLcBPsXOWHXN\n/VOJGRJp80fZysjdVKFqZLnD4LJ2dQ3rWqm/GUwy4LbbCb6LJagPwBwBtr8nMJkA\nj9BYT2xJhQKBgFhspGr1blJ1hZt4OBvO3DWLWMSf3GJpDrREBbsIYz2LHpexOo4d\nUk/+iOSTFq1iAVL48LSPVrU8rXwFyPX3cwgrrJOAvVWN7udnjBc3PGeAwrp+8D9Y\nlrmyem1X7T+NUZ/kGQVxp/s0oZQUXIAHUmiAXfmyzqAjHAGBol9ISJ6NAoGBALmp\nEO19/3sIhCB9gbrywmrFBBJeP50njxxIb8H26vv4X3RAm8GgYa3EjbqRr1wNXFyl\nY09AtrgRvKrcDV5n3M7le/bx4wK79uPyXDdjnAyJSJa2xsZaqxL2+D4mB/ihFpzB\nxVX6J9Dby2Sx/8fHfhSCslVyXtAwSFtc66+F1eg5AoGAPeVeGi/Naja2Tfi8qUQ5\n1JUfgCp0OrMUWb0vSupx+t9JHEG/4x+qf5t8uhXN7nb7Ze1tW/VfE72z4HVigbrc\npHT2Pk0t6SjcZBuV3qVwcH3VoU/PZws/bpKUR1PJnf2AAldedehXE5eUU6XjQ0lr\nSWK85/hP4lAEHY7Hd637mhE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "shay-969@dazzling-lodge-280803.iam.gserviceaccount.com",
+  "client_id": "104628395648866186538",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/shay-969%40dazzling-lodge-280803.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

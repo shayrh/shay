@@ -83,7 +83,9 @@
 		Proven ability to install, configure, and maintain computer systems and servers, manage users and accounts, manage backups, troubleshoot, and implement security solutions. 
 		Strong technical skills and problem-solving abilities, ability to work independently and as part of a team, and excellent communication and customer service skills.
                     </p>
-                    <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+			<a href="javascript:void(0);" onclick="window.open('assets/documents/ShayRahamimResume.pdf', '_blank'); window.focus(); if (window.opener) { window.opener.focus(); }" title="Download CV" tabTitle="CV">
+  <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+</a>
                 </div>
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
@@ -356,6 +358,96 @@
 
     <!-- contact section -->
     <section class="section" id="contact">
+  <div class="container text-center">
+    <p class="section-subtitle">How can you communicate?</p>
+    <h6 class="section-title mb-5">Contact Me</h6>
+    <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+      <div class="form-row">
+        <div class="form-group col-sm-6">
+          <input
+            type="text"
+            size="50"
+            class="form-control"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+        <div class="form-group col-sm-6">
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Enter Email"
+            required
+          />
+        </div>
+        <div class="form-group col-sm-12">
+          <textarea
+            name="comment"
+            id="comment"
+            rows="6"
+            class="form-control"
+            placeholder="Write Something"
+          ></textarea>
+        </div>
+        <div class="form-group col-sm-12 mt-3">
+          <input
+            type="submit"
+            value="Send Message"
+            class="btn btn-outline-primary rounded"
+          />
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    const contactForm = document.querySelector('.contact-form');
+    contactForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      // Get the form data
+      const name = document.querySelector('#name').value;
+      const email = document.querySelector('#email').value;
+      const message = document.querySelector('#message').value;
+
+      // Send the email
+      sendEmail(name, email, message);
+    });
+
+    function sendEmail(name, email, message) {
+      const emailBody = `
+        <p>Name: ${name}</p>
+        <p>Email: ${email}</p>
+        <p>Message:</p>
+        <pre>${message}</pre>
+      `;
+
+      const emailOptions = {
+        to: 'shayrh28@gmail.com', // Replace with your email address
+        subject: 'New Contact Form Submission',
+        body: emailBody
+      };
+
+      // Send the email using the fetch API
+      fetch('https://some-email-sending-service/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(emailOptions)
+      })
+        .then(response => response.json())
+        .then(data => {
+          if (data.success) {
+            alert('Your message has been sent successfully.');
+          } else {
+            alert('There was an error sending your message. Please try again later.');
+          }
+        });
+    }
+  </script>
+</section>
+
         <div class="container text-center">
             <p class="section-subtitle">How can you communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>

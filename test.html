@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gmail API Test</title>
+</head>
+<body>
+	<script src="assets/js/p5.js"></script>
+  <script>
+    const mail = require('@google-cloud/mail');
+
+    const client = new mail.MailClient({
+      keyFile: 'assets/js/gmail.json',
+    });
+
+    // Send an email
+    const message = {
+      from: {
+        email: 'shayrh28@gmail.com',
+        name: 'Your Name',
+      },
+      to: ['shayr@orhitec.com'],
+      subject: 'Subject Line',
+      text: 'This is the message body.',
+    };
+
+    client.sendEmail(message, (err, response) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(response);
+      }
+    });
+  </script>
+</body>
+</html>
