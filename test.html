@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Gmail API Test</title>
+  <title>Send Email</title>
 </head>
 <body>
-	<script src="assets/js/p5.js"></script>
-  <script>
-    const mail = require('@google-cloud/mail');
+  <h1>Send Email</h1>
 
-    const client = new mail.MailClient({
-      keyFile: 'assets/js/gmail.json',
-    });
+  <form action="index.php" method="post">
+    <label for="sender">From:</label>
+    <input type="text" id="sender" name="sender" />
 
-    // Send an email
-    const message = {
-      from: {
-        email: 'shayrh28@gmail.com',
-        name: 'Your Name',
-      },
-      to: ['shayr@orhitec.com'],
-      subject: 'Subject Line',
-      text: 'This is the message body.',
-    };
+    <label for="recipient">To:</label>
+    <input type="text" id="recipient" name="recipient" />
 
-    client.sendEmail(message, (err, response) => {
-      if (err) {
-        console.error(err);
-      } else {
-        console.log(response);
-      }
-    });
-  </script>
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" />
+
+    <label for="body">Body:</label>
+    <textarea id="body" name="body"></textarea>
+
+    <input type="submit" value="Send" />
+  </form>
+
+  <?php
+
+    // Import the Google API Client Library for PHP
+    require_once 'vendor/autoload.php';
+
+    // Create a new Gmail API client
+    $client = new Google_Client();
+    $client->setAuthConfig('\assets\js\client_secret_925424167721-8enas3p7h9s4c1b1uco9l7ima5vfakak.apps.googleusercontent.com.json');
+
+    // Create a new Gmail service object
+    $service = new Google_Service_Gmail($client);
+
+    // Get the data from the form
+    $sender = $_POST['sender'];
+    $recipient = $_POST['recipient'];
+    $subject = $_POST['subject'];
+    $body = $_POST['body'];
+
+    // Create a new email message
+    $message = new Google_Service_Gmail_Message();
+    $message->setFrom($sender);
+    $message->setTo($recipient);
+    $message->setSubject($subject);
+    $message->setBody($body);
+
+    // Send the email
+    $service->users->messages->send('me', $message);
+
+  ?>
 </body>
 </html>
+

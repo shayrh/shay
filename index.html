@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="assets/css/meyawo.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css">																									
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -84,8 +85,8 @@
 		Strong technical skills and problem-solving abilities, ability to work independently and as part of a team, and excellent communication and customer service skills.
                     </p>
 			<a href="javascript:void(0);" onclick="window.open('assets/documents/ShayRahamimResume.pdf', '_blank'); window.focus(); if (window.opener) { window.opener.focus(); }" title="Download CV" tabTitle="CV">
-  <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
-</a>
+			<button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+			</a>
                 </div>
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
@@ -179,18 +180,19 @@
                         </span>
                     </a>
                 </div>
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/folio-3.jpg" class="img-responsive rounded"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Cloud Solutions</h5>
-                                    <p class="font-weight-normal">I am an expert in private cloud solutions and I successfully operate it. Recently, I set up a private cloud "Next Cloud" and it is linked to the company's active directory so that everyone can access it with their username and password.</p>
-                            </span>
-                        </span>
-                    </a>
-                </div>
+				<div class="col-md-4">
+					<a href="assets/imgs/cloud1.jpg" class="portfolio-card" data-lightbox="portfolio">
+					<a href="assets/imgs/cloud2.jpg" class="portfolio-card" data-lightbox="portfolio">
+						<img class="portfolio-card-img" src="assets/imgs/folio-3.jpg" class="img-responsive rounded" alt="Cloud Solutions">
+																																																					  
+						<span class="portfolio-card-overlay">
+							<span class="portfolio-card-caption">
+								<h4>Cloud Solutions</h4>
+								<p class="font-weight-normal">I am an expert in private cloud solutions and I successfully operate it. Recently, I set up a private cloud "Next Cloud" and it is linked to the company's active directory so that everyone can access it with their username and password.</p>
+							</span>
+						</span>
+					</a>
+				</div>
             </div><!-- end of row -->
         </div><!-- end of container -->
     </section> <!-- end of portfolio section -->
@@ -477,7 +479,7 @@
 
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </body>
 
 </html>
